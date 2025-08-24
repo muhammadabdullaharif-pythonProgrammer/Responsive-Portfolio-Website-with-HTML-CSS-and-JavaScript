@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Muhammad Abdullah Arif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Profile picture of Muhammad Abdullah Arif" class="profile-pic">
+    <p>Hello! I’m <strong>Muhammad Abdullah Arif</strong>, a Computer Science student and Python Developer interested in Web Development and Cybersecurity. Welcome to my portfolio website!</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="project1.jpg" alt="Screenshot of Banking System project">
+        <h3>Secure Banking System</h3>
+        <p>A banking system built with Python, SQLite, and OOP principles.</p>
+      </article>
+
+      <article class="project-card">
+        <img src="project2.jpg" alt="Screenshot of School Management System project">
+        <h3>School Management System</h3>
+        <p>Static website built with HTML, CSS, and JavaScript for managing school data.</p>
+      </article>
+
+      <article class="project-card">
+        <img src="project3.jpg" alt="Screenshot of QR Code Generator project">
+        <h3>QR Code Generator</h3>
+        <p>Python tool to generate QR codes with custom styling.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" aria-label="Contact Form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Muhammad Abdullah Arif | Built with ❤️ using HTML, CSS, and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
